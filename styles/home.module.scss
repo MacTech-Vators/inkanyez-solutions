@@ -1,0 +1,278 @@
+
+.home {
+   // background: 
+    //linear-gradient(rgba(225, 174, 4, 0.12), rgba(225, 174, 4, 0.18)),
+    //url("../public/BlackTeam.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+
+  .hero {
+  //  background: linear-gradient(rgba(81, 68, 25, 0.18), rgba(156, 126, 29, 0.4)),
+   //   url("../public/inkanye.JPG") center/cover no-repeat;
+   background-image: url("../public/inkanye.JPG");
+    color: #f1e8e8;
+    padding: 6rem 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+    .heroText {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        /* subtle shimmer for hero title */
+        background: linear-gradient(90deg, #fff 0%, #f0c106 40%, #a8dadc 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: shimmer 4s linear infinite;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+
+      .ctaBtn {
+        background: #46b91f;
+        color: #1d3557;
+        border: none;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.18s;
+
+        &:hover {
+          background: #a8dadc;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  .visionMission {
+  
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: #f0c10684;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+
+    .vision, .mission {
+    flex: 1 1 320px;
+    background: #f4cc03;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeSlideIn 1s forwards;
+     perspective: 900px;
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.4,0.2,0.2,1),
+                box-shadow 0.25s, background 0.25s;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+
+    /* accent bar like services cards */
+    &::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      width: 42px;
+      height: 6px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #f0c106, #457b9d);
+      transform-origin: left center;
+      transform: scaleX(0);
+      transition: transform 0.45s ease;
+    }
+
+    &:hover {
+      transform: translateY(-8px) rotateX(3deg) rotateY(-4deg) scale(1.02);
+      box-shadow: 0 8px 34px rgba(30, 41, 59, 0.14);
+      background: linear-gradient(180deg, #fff7c9, #f4cc03 70%);
+    }
+
+    &:hover::before { transform: scaleX(1); }
+  }
+
+  .vision {
+    animation-delay: 0.18s;
+  }
+  .mission {
+    animation-delay: 0.42s;
+  }
+
+    h2 {
+      color: #457b9d;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #333;
+    }
+  }
+
+  .coreValues {
+  background: #e6bf3f;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideIn 1s 0.8s forwards;
+  text-align: center;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #1d3557;
+    }
+
+    ul {
+      list-style-type: "✔ ";
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      padding-left: 1rem;
+
+      li {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideInItem 0.68s forwards;
+      animation-delay: calc(1.0s + 0.12s * var(--i));
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+       perspective: 800px;
+      transition: transform 0.18s ease, color 0.18s ease;
+      backface-visibility: hidden;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -18px;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(90deg,#457b9d,#f0c106);
+        border-radius: 50%;
+        transform: scale(0.95);
+        transition: transform 0.18s ease;
+      }
+
+      &:hover {
+        transform: translateY(-2px) rotateY(8deg);
+        background: #e5cd52e3;
+        color: #1d3557;
+      }
+      }
+    }
+  }
+
+.newsSection {
+  background: #e3b40a;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideIn 1s 1.2s forwards;
+
+  h2 {
+    margin-bottom: 1.2rem;
+    color: #1d3557;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.8rem;
+      font-size: 1.05rem;
+      color: #333;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideInItem 0.62s forwards;
+      animation-delay: calc(1.4s + 0.12s * var(--i));
+      background: none;
+      transition: background 0.3s, color 0.3s, transform 0.18s;
+      border-radius: 6px;
+      padding: 0.5rem 0.5rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 12px;
+        width: 6px;
+        height: 6px;
+        background: linear-gradient(90deg,#457b9d,#f0c106);
+        border-radius: 50%;
+      }
+
+      &:hover {
+        background: #f4cc03;
+        color: #1d3557;
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+// Animation keyframes
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideInItem {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0) }
+  50% { transform: translateY(-6px) }
+  100% { transform: translateY(0) }
+}
+
+@keyframes shimmer {
+  0% { background-position: -400% 0; }
+  100% { background-position: 400% 0; }
+}
+
+/* accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .vision, .mission, .coreValues ul li, .newsSection ul li, .heroText h1 {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+}

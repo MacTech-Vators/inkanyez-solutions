@@ -1,0 +1,46 @@
+.leadership {
+  padding: 2rem;
+  background: #0d0d0d;
+  text-align: center;
+
+  h1 {
+    color: #dfb946;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #555;
+  }
+}
+
+.leadersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.leaderCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: #457b9d;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #333;
+  }
+}

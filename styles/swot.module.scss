@@ -1,0 +1,157 @@
+.swot {
+  padding: 2.5rem 1rem;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0c0c0c 0%, rgba(15, 15, 14, 0.06) 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  color: #edb008ab;
+  overflow-x: hidden;
+
+  h1 {
+    font-size: 2.1rem;
+    margin: 0;
+    font-weight: 700;
+    background: linear-gradient(90deg,#edb008ab 0%, #a37c27 40%, #edb008ab 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.6px;
+    animation: shimmer 3.8s linear infinite;
+  }
+
+  p {
+    max-width: 920px;
+    text-align: center;
+    color: #edb008ab;
+    margin: 0.25rem 0 1.2rem;
+  }
+}
+
+.swotGrid {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  padding: 0 1rem;
+}
+
+.swotBox {
+  position: relative;
+  background: linear-gradient(180deg,#ffffff,#fff7d6 60%);
+  border-radius: 12px;
+  padding: 1.6rem;
+  box-shadow: 0 8px 28px rgba(16, 42, 67, 0.06);
+  transform-origin: center;
+  perspective: 900px;
+  opacity: 0;
+  transform: translateY(36px) rotateX(0deg);
+  animation: fadeInUp 0.88s forwards;
+  animation-delay: var(--delay, 0s);
+  transition: transform 0.6s cubic-bezier(.2,.9,.2,1), box-shadow .25s, background .25s;
+  will-change: transform, opacity;
+
+  h2 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+
+    li {
+      margin-bottom: 0.7rem;
+      color: #243b53;
+      font-weight: 500;
+      opacity: 0;
+      transform: translateX(-10px);
+      animation: itemIn 0.6s forwards;
+      animation-delay: calc(0.35s + 0.06s * var(--i));
+      position: relative;
+      transition: transform .18s ease, color .18s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -18px;
+        top: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: linear-gradient(90deg,#457b9d,#f0c106);
+        transform: scale(.95);
+      }
+
+      &:hover { transform: translateX(2px); color: #102a43; }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px) rotateY(-8deg) scale(1.02);
+    box-shadow: 0 22px 50px rgba(16,42,67,0.14);
+  }
+
+  /* small decorative pulsing icon left */
+  &::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(69,123,157,0.12), rgba(240,193,6,0.12));
+    filter: blur(.5px);
+    animation: pulse 3.6s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+/* modifiers for each quadrant */
+.strengths { border-left: 6px solid #46b868; }
+.weaknesses { border-left: 6px solid #f28b29; }
+.opportunities { border-left: 6px solid #457b9d; }
+.threats { border-left: 6px solid #e04a3f; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .swotGrid { grid-template-columns: 1fr; }
+}
+
+/* stagger fallback for non-JS environments */
+.swotGrid > .swotBox:nth-child(1) { --delay: 0.14s; }
+.swotGrid > .swotBox:nth-child(2) { --delay: 0.28s; }
+.swotGrid > .swotBox:nth-child(3) { --delay: 0.42s; }
+.swotGrid > .swotBox:nth-child(4) { --delay: 0.56s; }
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(36px) rotateX(0deg); }
+  to   { opacity: 1; transform: translateY(0) rotateX(0deg); }
+}
+@keyframes itemIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0% { transform: scale(1); opacity: .85; }
+  50% { transform: scale(1.08); opacity: .95; }
+  100% { transform: scale(1); opacity: .85; }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .swot h1, .swotBox, .swotBox * { animation: none !important; transition: none !important; }
+}
