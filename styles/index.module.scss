@@ -16,7 +16,7 @@
   background-image: url("../public/Runway.jpeg");
     background-size: cover;
     background-position: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     /* moving background container */
     .heroSlider {
       position: absolute;
@@ -136,8 +136,8 @@ font-size: 1.5rem;
       animation: fadeInUp 0.9s ease-out forwards;
       animation-delay: 0.2s;
       will-change: opacity, transform;
-      /* make sure children can animate independently *
-    }*/
+      /* make sure children can animate independently */
+    
      /*.ctaBtn {
     display: inline-block;
     margin: 2rem auto 0; 
@@ -255,12 +255,12 @@ font-size: 1.5rem;
         color: transparent;
         animation: shimmer 4s linear infinite;
       }
-
+*/
       p {
         font-size: 1.2rem;
         margin-bottom: 2rem;
       }
-*/
+
       .ctaBtn {
         background: #46b91f;
         color: #1d3557;
@@ -697,5 +697,75 @@ font-size: 1.5rem;
     opacity: 1 !important;
   }
   .avatar img { transition: none !important; }
+}
+
+/* already have a 600px rule; extend it with more layout changes */
+@media (max-width: 600px) {
+  /* hero */
+  .home .hero {
+    padding: 6rem 2rem;               /* less white‑space */
+  }
+  .home .heroContent {
+    font-size: 0.95rem;               /* smaller base text */
+  }
+  .home .heroContent h1 {
+    font-size: clamp(1.6rem, 9vw, 2.0rem);
+    letter-spacing: 0;               /* tighter on narrow screens */
+  }
+  .home .heroContent p {
+    font-size: 0.88rem;
+  }
+
+  /* news list: stack items full‑width */
+  .newsList {
+    gap: 0.5rem;
+  }
+  .newsItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.6rem 0.8rem;
+  }
+  .avatar {
+    margin-bottom: 0.4rem;
+  }
+
+  /* contact page: full‑width inputs, bigger tappable links */
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .whatsappLink {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* hide non‑essential decorations */
+  .bgSlider,
+  .some‑big‑background‑graphic {
+    display: none;
+  }
+}
+
+/* smaller breakpoint for very small phones */
+@media (max-width: 400px) {
+  :global(body),
+  :global(p),
+  :global(input),
+  :global(button) {          /* now the compiler knows these are global */
+    font-size: 14px;
+  }
+  .navLinks {
+    font-size: 0.85rem;
+  }
+  .leftPopup {
+    width: 200px;
+    left: -220px;
+  }
+  .leftPopup.visible { left: 8px; }
+  .home .hero {
+    padding: 4rem 1rem;
+  }
 }
 }
