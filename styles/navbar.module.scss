@@ -2,21 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #050505,#323230a4);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #f9f8f7,#e3ca8cac);
+  box-shadow: 0 2px 8px rgba(246, 245, 244, 0.941);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
 
   a {
-    color: white;
+    color: rgb(7, 7, 7);
     text-decoration: none;
     font-weight: bold;
     //font-style: italic;
     font-family: Georgia;
     &:hover {
-      color: #a8dadc;
+      color: #dac654;
     }
   }
 }
@@ -24,7 +24,7 @@
 .logo {
    font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #efe7e700;
   letter-spacing: 1px;
   text-decoration: none;
 
@@ -47,7 +47,7 @@
 
 .dropdown {
   span {
-    color: white;
+    color: rgb(12, 12, 12);
     cursor: pointer;
     font-weight: bold;
   }

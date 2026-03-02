@@ -16,25 +16,23 @@ const Leadership = () => {
             <h3>Tumelo Makabolane</h3>
             <p>Chief Executive Officer (CEO)</p>
           </div>
-          <div className={styles.leaderCard}>
-            <h3>Sello Mabina</h3>
-            <p>Director of Human Resources</p>
-          </div>
+        
+        {/*}  <div className={styles.leaderCard}>
+            
+          </div>*/}
           <div className={styles.leaderCard}>
             <h3>Thabo Kabelo Lefao</h3>
-            <p>Director of Legal & Compliance</p>
+            <p>Director of Operations</p>
           </div>
           <div className={styles.leaderCard}>
             <h3>Mukhuleko Chabangu</h3>
-            <p>Chief Technology Officer (CTO)</p>
+            <p>Director</p>
           </div>
+         {/*} <div className={styles.leaderCard}>
+               </div>*/}
           <div className={styles.leaderCard}>
-            <h3>Ntwariso Maluleke</h3>
-            <p>Chief Operating Officer (COO)</p>
-          </div>
-          <div className={styles.leaderCard}>
-            <h3>Thandeka Modiba</h3>
-            <p>Chief Financial Officer (CFO)</p>
+            <h3>Isaac Modiba</h3>
+            <p>Commodity Manager</p>
           </div>
           <div className={styles.leaderCard}>
             <h3>Norbet Chekwari</h3>

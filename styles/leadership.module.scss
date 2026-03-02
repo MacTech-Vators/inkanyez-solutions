@@ -1,6 +1,6 @@
 .leadership {
   padding: 2rem;
-  background: #0d0d0d;
+  background: #f9f5f5;
   text-align: center;
 
   h1 {
@@ -12,7 +12,10 @@
     max-width: 700px;
     margin: 0 auto 2rem;
     font-size: 1.1rem;
-    color: #555;
+    color: #0a0000;
+      opacity: 0.95;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif;
   }
 }
 
@@ -24,7 +27,7 @@
 }
 
 .leaderCard {
-  background: #fff;
+  background: #e9b10bce;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);

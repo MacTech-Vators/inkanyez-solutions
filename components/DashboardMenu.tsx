@@ -7,10 +7,10 @@ const Dashboard = () => {
       <div className={styles.dashboard}>
         <h1>Company Dashboard</h1>
         <div className={styles.cards}>
-          <div className={styles.card}>📊 Market Opportunities</div>
-          <div className={styles.card}>🛠 Products & Services</div>
-          <div className={styles.card}>👩‍💼 Leadership Team</div>
-          <div className={styles.card}>⚙️ Operations</div>
+          <div className={styles.card}>Market Opportunities</div>
+          <div className={styles.card}>Products & Services</div>
+          <div className={styles.card}>Leadership Team</div>
+          <div className={styles.card}>Operations</div>
         </div>
       </div>
     </Layout>

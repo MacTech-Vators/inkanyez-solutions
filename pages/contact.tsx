@@ -30,9 +30,9 @@ const Contact = () => {
             <h2>📍 Company Info</h2>
             <p><strong>Inkanyez Solutions (Pty) Ltd</strong></p>
             <p>Company Reg: 2024/717005/07</p>
-            <p>Email: <a href="mailto:info@inkanyezsolutions.co.za">info@inkanyezsolutions.co.za</a></p>
-            <p>Phone: +27 11 123 4567</p>
-            <p>Location: Johannesburg, South Africa</p>
+            <p>Email: <a href="mailto:info@inkanyezsolutions.co.za">info@inkanyez.co.za</a></p>
+            <p>Phone: +27 68 514 4409</p>
+            <p>Location: 13913 freedom Dr, Ivory Park,<br />Midrand, Johannesburg <br /> South Africa</p>
           </div>
 
           {/* Contact Form */}

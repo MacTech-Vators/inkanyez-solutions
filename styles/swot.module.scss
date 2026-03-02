@@ -1,19 +1,20 @@
 .swot {
   padding: 2.5rem 1rem;
   min-height: 100vh;
-  background: linear-gradient(160deg, #0c0c0c 0%, rgba(15, 15, 14, 0.06) 100%);
+  background: linear-gradient(160deg, #f6efef 0%, rgba(239, 239, 233, 0.06) 100%);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-  color: #edb008ab;
+  color: #0c0900;
   overflow-x: hidden;
 
   h1 {
     font-size: 2.1rem;
     margin: 0;
     font-weight: 700;
-    background: linear-gradient(90deg,#edb008ab 0%, #a37c27 40%, #edb008ab 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg,#e6cf90ab 0%, #a37c27 40%, #dfc06bab 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -24,8 +25,10 @@
   p {
     max-width: 920px;
     text-align: center;
-    color: #edb008ab;
+    color: #e6a707;
     margin: 0.25rem 0 1.2rem;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 }
 
@@ -41,7 +44,7 @@
 
 .swotBox {
   position: relative;
-  background: linear-gradient(180deg,#ffffff,#fff7d6 60%);
+  background: linear-gradient(180deg,#f0ca77,#edc00d 60%);
   border-radius: 12px;
   padding: 1.6rem;
   box-shadow: 0 8px 28px rgba(16, 42, 67, 0.06);

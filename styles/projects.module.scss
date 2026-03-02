@@ -1,7 +1,10 @@
 .projects {
   padding: 2rem;
-  background: #0e0e0e;
+  background: #f8f5f5;
   text-align: center;
+  background-image: url("../public/Devices.jpeg");
+  background-size: cover;
+  background-position: center;
 
   h1 {
     color: #e1a50f;
@@ -13,6 +16,8 @@
     margin: 0 auto 2rem;
     font-size: 1.1rem;
     color: #c8a03c;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
 
@@ -24,7 +29,7 @@
 }
 
 .projectCard {
-  background: #fff;
+  background: #ecc171b6;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -42,19 +47,19 @@
   &:hover {
     transform: rotateY(180deg) translateY(-5px);
     box-shadow: 0 8px 24px rgba(30, 41, 59, 0.13);
-    background: #e3b40a;
-    color: #111212;
+    background: #e5b508cb;
+    color: #001212;
   }
 
   h2 {
-    color: #0e0f0f;
+    color: #f6c103;
     margin-bottom: 0.8rem;
   }
 
   p {
     margin-bottom: 0.8rem;
     font-size: 1rem;
-    color: #333;
+    color: #0b0700;
   }
 }
 

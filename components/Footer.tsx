@@ -48,7 +48,7 @@ const Footer = () => {
           </p>
           <p>Phone: +27 63 176 1071</p>*/}
           <h3>Location</h3>
-          <p>123 Inkanyez Street<br/>Johannesburg, South Africa</p>
+          <p> 13913 FREEDOM DR, IVORY PARK,<br/> GAUTENG<br/>JOHANNESBURG(MIDRAND),<br/>SOUTH AFRICA</p>
 
           <div className={styles.mapContainer} aria-hidden={false}>
             <iframe

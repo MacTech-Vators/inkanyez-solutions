@@ -1,6 +1,6 @@
 .roadmap {
   padding: 2rem;
-  background: #101010;
+  background: #fdfafa;
   text-align: center;
 
   h1 {
@@ -12,7 +12,10 @@
     max-width: 800px;
     margin: 0 auto 2rem;
     font-size: 1.1rem;
-    color: #555;
+    color: #080000;
+      opacity: 0.95;
+      font-weight: bolder;
+      font-family: 'Times New Roman', Times, serif; 
   }
 }
 
@@ -24,12 +27,12 @@
   &::after {
     content: "";
     position: absolute;
-    width: 4px;
-    background: #457b9d;
+    width: 7px;
+    background: #3d4042;
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -2px;
+    left: 53%;
+    margin-left: 2px;
   }
 }
 
@@ -40,17 +43,17 @@
 
   &.left {
     left: 0;
-    text-align: right;
+    text-align: center;
   }
 
   &.right {
     left: 50%;
-    text-align: left;
+    text-align: center;
   }
 }
 
 .timelineContent {
-  background: #fff;
+  background: #ebba18;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -70,5 +73,5 @@
 .outcome {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #1d3557;
+  color: #000309;
 }

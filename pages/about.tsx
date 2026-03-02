@@ -7,7 +7,7 @@ export default function Home() {
     <Layout>
       <div className={styles.home}>
         {/* Hero Section */}
-        <section className={styles.hero}>
+     {/*}   <section className={styles.hero}>
           <div className={styles.heroText}>
             <h1>Empowering South Africa’s Digital Future</h1>
             <p>
@@ -20,6 +20,40 @@ export default function Home() {
             </Link>
           </div>
         </section>
+*/}
+<section className={styles.hero}>
+  <div className={styles.heroContent}>
+            <h1>Empowering South Africa’s Digital Future</h1>
+           { /* paragraph with moving background images*
+            <div className={styles.bgParagraph}>
+              <div className={styles.bgSlider} aria-hidden="true">
+                <div className={styles.track}>
+                  <img src="/Onsite.jpg" className={styles.slide} alt="" />
+                  <img src="/564.jpg" className={styles.slide} alt="" />
+                  <img src="/675.jpg" className={styles.slide} alt="" />
+                  {/* duplicated set for seamless loop *
+                  <img src="/Onsite.jpg" className={styles.slide} alt="" />
+                  <img src="/564.jpg" className={styles.slide} alt="" />
+                  <img src="/675.jpg" className={styles.slide} alt="" />
+                </div>
+              </div>
+
+              <p>
+                Inkanyez Solutions is a <strong>woman-led</strong> IT support
+                company dedicated to delivering innovative, reliable, and
+                affordable technology solutions — helping organisations
+                stay connected, secure, and productive.
+              </p>
+            </div>
+
+            <Link href="/contact">
+              <button className={styles.ctaBtn}>Get Started</button>
+            </Link>
+
+            */}
+         </div>
+
+</section>
 
         {/* Vision & Mission */}
         <section className={styles.visionMission}>

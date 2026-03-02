@@ -52,11 +52,9 @@ const Dashboard = () => {
           <h2>👩‍💼 Leadership Team</h2>
           <ul>
             <li><strong>Tumelo Makabolane</strong> – CEO</li>
-            <li><strong>Sello Mabina</strong> – Director of Human Resources</li>
-            <li><strong>Thabo Kabelo Lefao</strong> – Director of Legal & Compliance</li>
-            <li><strong>Mukhuleko Chabangu</strong> – CTO</li>
-            <li><strong>Ntwariso Maluleke</strong> – COO</li>
-            <li><strong>Thandeka Modiba</strong> – CFO</li>
+            <li><strong>Thabo Kabelo Lefao</strong> – Director of Operations</li>
+            <li><strong>Mukhuleko Chabangu</strong> - Director</li>
+            <li><strong>Thandeka Modiba</strong> – Commodity Manager</li>
             <li><strong>Norbet Chekwari</strong> – Director of Sales & Marketing</li>
           </ul>
         </section>

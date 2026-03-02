@@ -39,7 +39,7 @@
 
 .serviceCard {
   --card-bg: #fffbe7;
-  background: linear-gradient(180deg, var(--card-bg), #fff8d5 60%);
+  background: linear-gradient(180deg, var(--card-bg), #f0e199 60%);
   border-radius: 14px;
   box-shadow: 0 6px 22px rgba(30, 41, 59, 0.08);
   padding: 2rem 1.5rem;
@@ -67,7 +67,7 @@
     width: 48px;
     height: 6px;
     border-radius: 4px;
-    background: linear-gradient(90deg, #f0c106, #457b9d);
+    background: linear-gradient(90deg, #f0c106, #6fd50a);
     transform-origin: left center;
     transform: scaleX(0);
     transition: transform 0.45s ease;
